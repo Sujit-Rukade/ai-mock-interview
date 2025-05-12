@@ -1,3 +1,10 @@
+import { vapi } from "@/lib/vapi.sdk";
+
+vapi.init({
+  apiKey: process.env.NEXT_PUBLIC_VAPI_API_KEY!,
+});
+
+
 enum MessageTypeEnum {
   TRANSCRIPT = "transcript",
   FUNCTION_CALL = "function-call",
